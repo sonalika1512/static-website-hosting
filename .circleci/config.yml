@@ -7,10 +7,10 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Lets deploy thsi application
+          name: Lets deploy this application
           command: |
             ls
-            aws s3 sync . s3://$me-bucket-name/
+            aws s3 sync . s3://$AWS_BUCKET_NAME/
 
 
 
