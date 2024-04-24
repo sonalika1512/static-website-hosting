@@ -16,7 +16,7 @@ jobs:
           name: Let's deploy this application
           command: |
             ls
-            aws s3 sync . s3://your-bucket-name/
+            aws s3 sync . s3://me-bucket-name/
 
 workflows:
   Production:
