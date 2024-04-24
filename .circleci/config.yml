@@ -9,9 +9,9 @@ jobs:
       - run:
           name: Configure AWS CLI
           command: |
-            aws configure set aws_access_key_id AKIA4NNHB43TJ3Y2B7EU
-            aws configure set aws_secret_access_key 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
-            aws configure set region us-east-1
+            aws configure set aws_access_key_id *************
+            aws configure set aws_secret_access_key ******************
+            aws configure set ************
       - run:
           name: Let's deploy this application
           command: |
