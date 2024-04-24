@@ -7,11 +7,16 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Configure AWS CLI
+          command: |
+            aws configure set aws_access_key_id AKIA4NNHB43TJ3Y2B7EU
+            aws configure set aws_secret_access_key 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
+            aws configure set region us-east-1
+      - run:
           name: Let's deploy this application
           command: |
             ls
-            # Replace 'your-bucket-name' with your actual AWS bucket name
-            aws s3 sync . s3://me-bucket-name/
+            aws s3 sync . s3://your-bucket-name/
 
 workflows:
   Production:
